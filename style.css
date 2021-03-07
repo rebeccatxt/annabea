@@ -1,0 +1,57 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 20px 5px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("131573257_2714773238762043_397134392891316709_n.png");
+    background-size: 100%;
+}
+
+ul {
+    list-style: none;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+}
+
+img#menu {
+    width: 30px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+nav {
+    background-color: rgba(16, 16, 16, .5);
+    width: 350px;
+    height: 100%;
+    position: absolute;
+    left: -350px;
+    transition: all .5s;
+}
+
+a:hover {
+    background-color: rgb(176, 224, 230);
+    color:black;
+}
+
+label {
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+
+input[type="checkbox"]:checked ~ nav
+{
+    transform: translateX(350px);
+}
